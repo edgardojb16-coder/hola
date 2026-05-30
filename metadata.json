@@ -1,0 +1,6 @@
+{
+  "name": "Algoritmos",
+  "description": "Calculadora interactiva de numerologia que incluye los algoritmos de ZL y Piramide de Fechas para calcular secuencias.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
