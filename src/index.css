@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -6,10 +6,35 @@
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
-/* Custom background animations or glass effects if needed */
-.glass-panel {
-  background: rgba(24, 24, 27, 0.7);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #030a17;
+  color: #f4f4f5;
+  min-height: 100vh;
 }
 
+/* Fondo temático con los colores de las banderas de Costa Rica, Nicaragua y Honduras */
+.patriotic-background {
+  background: 
+    /* Resplandor Rojo (Costa Rica) */
+    radial-gradient(ellipse 65% 45% at 20% 12%, rgba(206, 17, 38, 0.38) 0%, transparent 70%),
+    /* Resplandor Azul Cobalto (Nicaragua) */
+    radial-gradient(ellipse 60% 45% at 80% 20%, rgba(0, 103, 198, 0.42) 0%, transparent 70%),
+    /* Resplandor Celeste / Turquesa (Honduras) */
+    radial-gradient(ellipse 70% 50% at 50% 88%, rgba(0, 188, 228, 0.35) 0%, transparent 75%),
+    /* Brillo blanco central sutil patrio */
+    radial-gradient(circle at 50% 35%, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
+    /* Base degradada tricolor profunda */
+    linear-gradient(170deg, #041029 0%, #1f050b 45%, #031c2e 100%);
+  background-attachment: fixed;
+}
+
+/* Efecto panel de cristal que permite que el fondo brille a través */
+.glass-panel {
+  background: rgba(12, 18, 32, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}

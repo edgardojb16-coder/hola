@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Algoritmo ZL</string>
+    <string name="title_activity_main">Algoritmo ZL</string>
+    <string name="package_name">com.algoritmozl.app</string>
+    <string name="custom_url_scheme">com.algoritmozl.app</string>
+</resources>
